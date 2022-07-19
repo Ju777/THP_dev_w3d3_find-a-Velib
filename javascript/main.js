@@ -18,11 +18,9 @@ const getRecords = async () => {
 displayRecords = async () => {
     let html = '';
     const records = await getRecords();
-    // console.clear();
-    console.log("bip");
-    // console.log(records);
-    // console.log(records[0].fields.name);
-    // console.log(records[0].fields.ebike);
+    // A la ligne du dessus, on note une différence avec l'exercice d'avant qui envoyait les datas en paramètres de la présente fonction.
+    // Ici on ré-utilise le principe d'enchaînements des tâches asynchrones. 
+ 
 
     records.map(record => {
         let htmlSegment = `
