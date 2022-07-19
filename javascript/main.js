@@ -1,6 +1,6 @@
-// 1ère façon de faire de l'asynchorne
+// l'utl pour fetch a été trouvée au bas de la page de l'API : https://opendata.paris.fr/explore/dataset/velib-disponibilite-en-temps-reel/api/?rows=100&disjunctive.name&disjunctive.is_installed&disjunctive.is_renting&disjunctive.is_returning&disjunctive.nom_arrondissement_communes
 var url = 'https://opendata.paris.fr/api/records/1.0/search/?dataset=velib-disponibilite-en-temps-reel&q=&rows=100&facet=name&facet=is_installed&facet=is_renting&facet=is_returning&facet=nom_arrondissement_communes';
-// var url = 'https://opendata.paris.fr/api/datasets/1.0/search/?q=';
+
 var req = new Request(url);
 
 
